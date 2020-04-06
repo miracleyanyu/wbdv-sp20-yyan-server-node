@@ -1,5 +1,4 @@
 var express = require('express');
-var process = require('process');
 var app = express();
 var bodyParser = require('body-parser');
 
@@ -26,4 +25,4 @@ app.get('/', (req, res) => {
   res.send('Assignment 9 NodeJs Server.')
 });
 
-app.set( 'port', ( process.env.PORT || 3000 ));
+app.listen(3000);
